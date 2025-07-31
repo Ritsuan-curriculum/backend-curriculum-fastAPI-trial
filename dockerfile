@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # FastAPIアプリを起動（Uvicorn）
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
